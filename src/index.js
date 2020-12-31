@@ -13,6 +13,7 @@ function Square(props) {
 class Board extends React.Component {
   renderSquare(i) {
     return (
+      
       <Square
         value={this.props.squares[i]}
         onClick={() => this.props.onClick(i)}
@@ -105,7 +106,7 @@ class Game extends React.Component {
     } else {
       status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
-
+ 
     return (
       <div className="game">
         <div className="game-board">
